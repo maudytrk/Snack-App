@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1049312586623",
+    "project_id": "snack-app-d6ffc",
+    "storage_bucket": "snack-app-d6ffc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049312586623:android:19ddb631134c035b4f884a",
+        "android_client_info": {
+          "package_name": "id.maudy.snack_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtvLwTnBNCyqifc1_m2T2www3dIaOQK1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

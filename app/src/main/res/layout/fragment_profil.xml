@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:padding="24dp">
+
+    <ImageButton
+        android:id="@+id/btnProfilPengaturan"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_manage"
+        android:contentDescription="Pengaturan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:cardCornerRadius="65dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/imgProfilFoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_myplaces"
+                android:clickable="true"
+                android:focusable="true"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klik gambar untuk mengubah foto"
+            android:textSize="11sp"
+            android:textColor="#999999"
+            android:layout_marginTop="-16dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/tvProfilNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memuat Nama..."
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvProfilNim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM: Memuat..."
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvProfilEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: Memuat..."
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="#FF9800"
+        android:visibility="gone" />
+
+</RelativeLayout>
